@@ -6,7 +6,7 @@ ranking table for a soccer league.
 ## Expected input and output
 
 You can find the `sample-input.txt` and `expected-output.txt` files
-[here](./).
+[here](.).
 
 The input and output will be text. Your solution should parse the provided
 `sample-input.txt` file via stdin (pipe or redirect) or by parsing a file passed
