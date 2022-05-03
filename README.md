@@ -3,6 +3,17 @@
 We want you to create a command-line application that will calculate the
 ranking table for a soccer league.
 
+
+## Table of contents
+- [The Challenge](#the-challenge)
+  * [Expected input and output](#expected-input-and-output)
+  * [The rules](#the-rules)
+  * [Guidelines](#guidelines)
+    + [After you finish](#after-you-finish)
+  * [What to send back to our team](#what-to-send-back-to-our-team)
+    + [Platform support](#platform-support)
+    + [What to expect afterwards](#what-to-expect-afterwards)
+
 ## Expected input and output
 
 You can find the [sample-input.txt](sample-input.txt) and [expected-output.txt](expected-output.txt) files at the top of this repository
@@ -59,4 +70,4 @@ Please use platform-agnostic constructs where possible (line-endings and file-pa
 ### What to expect afterwards
 
 Once you have sent us your project, we will review the code with our team members and rate it appropiately.
-If everything looks fine, we would like to have a code review interview with you where we will be going over what you sent us, as well as requesting a few changes in the code to see if the output can be altered. An example of what you can be expecting can be seen in this documentation: [goal-differential-expected-output.txt](goal-differential-expected-output.txt)
+If everything looks fine, we would like to have a code review interview with you where we will be going over what you sent us, as well as requesting a few changes in the code to see if the output can be altered. An example of what you can be expecting can be seen in this documentation: [goal-differential-instructions.md](goal-differential-instructions.md)
