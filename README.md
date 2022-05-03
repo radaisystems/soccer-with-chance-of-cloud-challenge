@@ -5,30 +5,20 @@ ranking table for a soccer league.
 
 ## Expected input and output
 
-You can find the `sample-input.txt` and `expected-output.txt` files
-[here](../).
+You can find the [sample-input.txt](sample-input.txt) and [expected-output.txt](expected-output.txt) files at the top of this repository
 
-The input and output will be text. Your solution should parse the provided
-`sample-input.txt` file via stdin (pipe or redirect) or by parsing a file passed
-by name on the command line. Your solution should output the correct result via
-stdout to the console.
+The input and output will be text. Your solution should parse the provided `sample-input.txt` file via stdin (pipe or redirect)or by parsing a file passed by name on the command line. Your solution should output the correct result via stdout to the console.
 
-The input contains results of games, one per line. See `sample-input.txt` for
-details. The output should be ordered from most to least points, following the
-format specified in `expected-output.txt`.
+The input contains results of games, one per line. See `sample-input.txt` for details. The output should be ordered from most to least points, following the format specified in `expected-output.txt`.
 
 You can expect that the input will be well-formed. There is no need to add
 special handling for malformed input files.
 
 ## The rules
 
-In this league, a draw (tie) is worth 1 point and a win is worth 3 points. A
-loss is worth 0 points. If two or more teams have the same number of points,
-they should have the same rank and be printed in alphabetical order (as in the
-tie for 3rd place in the sample data). Ranks are assigned according to [standard competition (1224) ranking](https://en.wikipedia.org/wiki/Ranking#Standard_competition_ranking_(%221224%22_ranking)).
+In this league, a draw (tie) is worth 1 point and a win is worth 3 points. A loss is worth 0 points. If two or more teams have the same number of points, they should have the same rank and be printed in alphabetical order (as in the tie for 3rd place in the sample data). Ranks are assigned according to [standard competition (1224) ranking](https://en.wikipedia.org/wiki/Ranking#Standard_competition_ranking_(%221224%22_ranking)).
 
-We expect the resulting output of the provided `sample-input.txt` file to exactly
-match the contents of `expected-output.txt`.
+We expect the resulting output of the provided `sample-input.txt` file to *exactly match the contents* of `expected-output.txt`.
 
 ## Guidelines
 
@@ -68,5 +58,5 @@ Please use platform-agnostic constructs where possible (line-endings and file-pa
 
 ### What to expect afterwards
 
-Once you have sent us the challenge, we will review the code with our team members and rate it appropiately.
-If everything looks fine, we would like to have a code review interview with you where we will be going over what you sent us, as well as requesting a few changes in the code to see if the output can be altered. An example of what you can be expecting can be seen in this documentation: [expected-output-goal-differential.txt](expected-output-goal-differential.txt) 
+Once you have sent us your project, we will review the code with our team members and rate it appropiately.
+If everything looks fine, we would like to have a code review interview with you where we will be going over what you sent us, as well as requesting a few changes in the code to see if the output can be altered. An example of what you can be expecting can be seen in this documentation: [goal-differential-expected-output.txt](goal-differential-expected-output.txt)

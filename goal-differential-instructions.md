@@ -16,4 +16,4 @@ goal differential for the season. If there is still a tie between both league po
 then the assigned rank should be the same, and the teams should be sorted alphabetically, as before.
 
 Output the end-of-season goal differential for each team to exactly match the contents of
-[expected-output-goal-differential.txt](expected-output-goal-differential.txt).
+[goal-differential-expected-output.txt](goal-differential-expected-output.txt).
