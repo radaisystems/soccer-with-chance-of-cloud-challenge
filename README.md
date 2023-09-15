@@ -1,6 +1,5 @@
 # The Challenge
-
-Platform engineering is about more than just coding.  It also involves the cloud.  We want you to write a script which will be able to run via command line and from the cloud.  It will calculate the ranking table for a soccer league.
+Platform engineering extends beyond coding and encompasses cloud integration. We require you to create a program that can be executed both via the command line and in a cloud environment. This program's purpose is to compute the ranking table for a soccer league.
 
 ## Table of contents
 - [The Challenge](#the-challenge)
@@ -56,7 +55,7 @@ We request that you spend no more than a few hours on this portion of the interv
 
 You should use optimal security practices when working with the AWS credentials.  Please do not share these credentials with anyone else.
 
-# Stretch goals
+# Bonus Points
 
 In this stage, we'll transition the script from the command line to the cloud. Please backup your current script before proceeding. You will need to submit both scripts. Modify your existing Terraform, bash, or equivalent to implement the following AWS adjustments. Also, ensure your revised script meets these specifications:
 
@@ -65,15 +64,13 @@ In this stage, we'll transition the script from the command line to the cloud. P
 
 The revised script should be executable from AWS Lambda, with all output directed to the email associated with the SNS Topic. Adjust as necessary and update your Terraform, bash, or equivalent to mirror these alterations
 
-# Architecting
-
 Your supervisor is pleased with your progress and would like to see this service taken to the next level.  Write 1-2 paragraphs with a diagram about how you would make this a highly available service that could be run on a regular basis and receive regular code changes.  Use any format for the writeup that you feel comfortable with so long as it can be packaged in a zip with the test of your submission.
 
-# Site Reliability Engineer (SRE) Stretch goals
+# Site Reliability Engineer (SRE) Tasks
 
 The following should only be handled by candidates of the SRE role.  If you are not applying for the SRE role, please ignore this section.
 
-An SRE requires the ability to write code to interact with AWS infrastructure.
+An SRE requires the ability to write code to interact with AWS infrastructure.  You must complete the Bonus Points section above before continuing
 
 "Craft a script that provides an interactive command-line interface for the user. This script should:
 
