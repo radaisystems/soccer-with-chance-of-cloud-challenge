@@ -1,6 +1,5 @@
 # The Challenge
-
-Platform engineering is about more than just coding.  It also involves the cloud.  We want you to write a script which will be able to run via command line and from the cloud.  It will calculate the ranking table for a soccer league.
+Platform engineering extends beyond coding and encompasses cloud integration. We require you to create a program that can be executed both via the command line and in a cloud environment. This program's purpose is to compute the ranking table for a soccer league.
 
 ## Table of contents
 - [The Challenge](#the-challenge)
@@ -14,7 +13,7 @@ Platform engineering is about more than just coding.  It also involves the cloud
 
 # Cloud
 
-Start with the cloud.  You need to write either or in combination a bash script or a cloud platform tool like Terraform to do the following:
+Begin with cloud infrastructure provisioning. You should create a bash script or utilize a cloud platform tool like Terraform to accomplish the following tasks:
 
 AWS credentials will be sent to you via email for use on this part of the project.  Please do not share these credentials with anyone else.  You will only have access to Access Keys for this part of the challenge.
 
@@ -56,7 +55,7 @@ We request that you spend no more than a few hours on this portion of the interv
 
 You should use optimal security practices when working with the AWS credentials.  Please do not share these credentials with anyone else.
 
-# Stretch goals
+# Bonus Points
 
 Make a copy of your current script and then lets move it to the cloud.  Ammend your existing Terraform, bash or similar to do the following AWS changes.  Additionally make any changes required to your updated script to satisfy the requirements:
 
@@ -65,7 +64,7 @@ Make a copy of your current script and then lets move it to the cloud.  Ammend y
 
 The updated script should be able to be run from AWS Lambda and all output should be sent to an email in the SNS Topic.  Make any changes required to do so and update your script, Terraform, bash or similar to reflect the changes.
 
-## Site Reliability Engineer (SRE) Stretch goals
+## Site Reliability Engineer (SRE) Bonus Points
 
 The following should only be handled by candidates of the SRE role.  If you are not applying for the SRE role, please ignore this section.
 
