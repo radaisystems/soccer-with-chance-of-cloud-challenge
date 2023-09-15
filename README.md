@@ -14,20 +14,20 @@ Platform engineering is about more than just coding.  It also involves the cloud
 
 # Cloud
 
-Start with the cloud.  You need to write either or in combination a bash script or a cloud platform tool like Terraform to do the following:
+Begin with cloud operations. Write either a bash script, use a cloud platform tool like Terraform, or a combination of both to achieve the following tasks
 
-AWS credentials will be sent to you via email for use on this part of the project.  Please do not share these credentials with anyone else.  You will only have access to Access Keys for this part of the challenge.
+AWS credentials will be sent to you via email for use on this part of the project.  Please do not share these credentials with anyone else.  You will only have access to Access Keys for the duration of the challenge.
 
 - Create an S3 bucket called `soccer-with-chance-of-cloud-challenge-<your name>`
-- Send the `sample-input.txt` file to the root of the bucket
+- Send the `data/sample-input.txt` file to the root of the bucket
 - Delete the data/simple-input.txt file from your local copy of the repository
-- Your bucket should reflect using industry standard security practices for private data
+- Your bucket should reflect using industry standard security practices for storing private data
 
 # Coding
 
 You can find the [data/sample-input.txt](data/sample-input.txt) and [expected-output.txt](expected-output.txt) files in this repository
 
-The input contains results of games, one per line. See `data/sample-input.txt` for details. The output should be ordered from most to least points, following the format specified in `expected-output.txt`.
+The input contains results of games played, one per line. See `data/sample-input.txt` for details. The output of your completed script should be ordered from most to least points, following the format specified in `expected-output.txt`.
 
 You can expect that the input will be well-formed. There is no need to add
 special handling for malformed input files.
@@ -46,7 +46,7 @@ Your script will need to download the sample-input.txt file from the S3 bucket. 
 
 Your solution should be able to be run from the command line. Please include appropriate scripts and instructions for running your application and your tests.
 
-If you use other libraries installed by a common package manager (pip, poetry, npm, gradle, etc.), it is not necessary to commit the installed packages.
+If you use other libraries installed by a common package manager (pip, poetry, npm, gradle, etc.), please include a formatted list of packes, it is not necessary to commit the installed packages.
 
 We write automated tests and *we would like you to do so as well*.
 
@@ -58,33 +58,35 @@ You should use optimal security practices when working with the AWS credentials.
 
 # Stretch goals
 
-Make a copy of your current script and then lets move it to the cloud.  Ammend your existing Terraform, bash or similar to do the following AWS changes.  Additionally make any changes required to your updated script to satisfy the requirements:
+In this stage, we'll transition the script from the command line to the cloud. Please backup your current script before proceeding. You will need to submit both scripts. Modify your existing Terraform, bash, or equivalent to implement the following AWS adjustments. Also, ensure your revised script meets these specifications:
 
-- Create a Lambda and upload your updated script
-- Create an SNS Topic and subscribe your email address to it for testing purposes (you will need to confirm the subscription)
+- Develop a Lambda and upload the modified script to it.
+- Establish an SNS Topic and add your email address as a subscriber for testing. Remember to confirm the subscription.
 
-The updated script should be able to be run from AWS Lambda and all output should be sent to an email in the SNS Topic.  Make any changes required to do so and update your script, Terraform, bash or similar to reflect the changes.
+The revised script should be executable from AWS Lambda, with all output directed to the email associated with the SNS Topic. Adjust as necessary and update your Terraform, bash, or equivalent to mirror these alterations
 
-## Site Reliability Engineer (SRE) Stretch goals
+# Architecting
+
+Your supervisor is pleased with your progress and would like to see this service taken to the next level.  Write 1-2 paragraphs with a diagram about how you would make this a highly available service that could be run on a regular basis and receive regular code changes.  Use any format for the writeup that you feel comfortable with so long as it can be packaged in a zip with the test of your submission.
+
+# Site Reliability Engineer (SRE) Stretch goals
 
 The following should only be handled by candidates of the SRE role.  If you are not applying for the SRE role, please ignore this section.
 
 An SRE requires the ability to write code to interact with AWS infrastructure.
 
-Write a new script which will present an interactive command line experience to the user.  The script should do the following:
+"Craft a script that provides an interactive command-line interface for the user. This script should:
 
-- Present the user with a menu of options
-- Offer an option to run the lambda script from the previous section
-- Offer an option to send a test email through the SNS Topic
-- Offer an option to execute the locally written tests you completed in an earlier step
-- Exit the script
+- Display a menu of choices to the user.
+- Include an option to execute the Lambda script mentioned in the prior section.
+- Provide an option to send a test email via the SNS Topic.
+- Feature an option to run the local tests you finished in a previous step.
+- Allow for exiting the script.
 
 ### After you finish
 
 - Please document any steps necessary to run your solution and your tests.
 - Please take 10 minutes to review your submission and list a few areas that would benefit from more time and attention.
-
-Your supervisor is pleased with your progress and would like to see this service taken to the next level.  Write 1-2 paragraphs with a diagram about how you would make this a highly available service that could be run on a regular basis and receive regular code changes.  Use any format for the writeup that you feel comfortable with.  
 
 ## What to send back to our team
 
@@ -96,7 +98,7 @@ Please send an email back to your point of contact with:
 - the amount of time you spent on the project
 - the list of improvements you would make
 
-> You can send us the submission in the form of a tarball, zip file, or a Github link to your repository.
+> You can send us the submission in the form of a tarball or a zip file
 
 ### Platform support
 
